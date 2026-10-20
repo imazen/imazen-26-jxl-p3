@@ -4,7 +4,7 @@ imazen-26 is a corpus for testing image codecs and image processing.
 
 This repository holds JPEG XL renders in source colour (including sRGB, Display P3 and Adobe RGB).
 The XL images are in [imazen-xl-26](https://github.com/imazen/imazen-xl-26).
-DNG sources remain in the originals repository and have no rendered twins.
+DNG sources are in imazen-xl-26 and have no rendered twins.
 
 Lossless files preserve their PNG twins' samples. JPEG-in-JXL files retain
 JPEG coefficients and reconstruct the original JPEG byte for byte.
