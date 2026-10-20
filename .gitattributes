@@ -1,0 +1,11 @@
+*.md text eol=lf
+*.tsv text eol=lf
+*.cff text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.jpg -text
+*.jpeg -text
+*.png -text
+*.heic -text
+*.dng -text
+*.jxl -text
