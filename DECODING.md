@@ -23,8 +23,9 @@ run `git lfs pull` to retrieve the image it names.
 ## PNG
 
 Use a PNG decoder that preserves the stored bit depth and colour metadata.
-The source-colour (`p3`) collection also contains sRGB and Adobe RGB images;
-its name does not mean every file is Display P3. Honour the ICC/cICP or sRGB
+The `p3` collection contains sRGB and Display P3 images. Adobe RGB sources
+are converted to Display P3 using relative colorimetric intent and gamut clipping.
+Honour the ICC/cICP or sRGB
 signalling instead of interpreting every RGB buffer as sRGB.
 
 For example, ImageMagick can read a PNG into a PPM for inspection:
