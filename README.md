@@ -2,7 +2,7 @@
 
 imazen-26 is a corpus for testing image codecs and image processing.
 
-This repository holds JPEG XL renders in source colour (including sRGB, Display P3 and Adobe RGB).
+This repository holds JPEG XL renders in sRGB and Display P3 (Adobe RGB sources converted to Display P3).
 The XL images are in [imazen-xl-26](https://github.com/imazen/imazen-xl-26).
 DNG sources are in imazen-xl-26 and have no rendered twins.
 
@@ -12,14 +12,14 @@ JPEG coefficients and reconstruct the original JPEG byte for byte.
 Gain-map sources include explicit 16-bit PQ HDR twins; JPEG XL also carries
 gain maps in `jhgm` boxes. See the decoding guide for HDR handling.
 
-Version 2026.10.19: 2109 images,
-2183 files, 6297804440 encoded bytes.
+Version 2026.10.20: 644 images,
+664 files, 1810385471 encoded bytes.
 
 | branch | images | files | bytes |
 |---|---:|---:|---:|
-| `train` | 1064 | 1098 | 3069558998 |
-| `validate` | 644 | 664 | 1807506111 |
-| `test` | 401 | 421 | 1420739331 |
+| `train` | 0 | 0 | 0 |
+| `validate` | 644 | 664 | 1810385471 |
+| `test` | 0 | 0 | 0 |
 
 `main` contains documentation. Each data branch contains only its own bucket.
 Related sources and all renditions share a bucket. Do not train or tune on
@@ -37,6 +37,6 @@ source provenance. The image licences differ; the Unsplash files retain the
 public domain or CC0 as specified per row. `provenance_json` preserves attribution
 and source URLs. The corpus tooling's software licence does not replace these licences.
 
-Layers: jxl-p3 (2183).
+Layers: jxl-p3 (664).
 
 Source and validation: [imazen-26](https://github.com/imazen/imazen-26).
